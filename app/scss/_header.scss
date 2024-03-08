@@ -11,6 +11,20 @@
 .menu {
   padding-left: 35px;
   padding-right: 60px;
+  &__list-link--active {
+    padding-bottom: 4px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 1px;
+      height: 2px;
+      background-color: rgba($color: #979797, $alpha: 0.7);
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
 }
 .menu__list {
   display: flex;

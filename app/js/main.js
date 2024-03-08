@@ -18,4 +18,5 @@ $(function () {
       filter: ".living",
     },
   });
+  // Fancybox.bind();
 });

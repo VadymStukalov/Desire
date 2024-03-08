@@ -10,6 +10,7 @@
   transition: all 0.5s;
   box-shadow: -2px 3px 17px 0px #000;
   z-index: 1;
+  overflow: hidden;
 
   &.rightside-menu--close {
     transform: translateX(200%);
