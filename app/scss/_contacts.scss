@@ -1,0 +1,138 @@
+.map {
+  margin-top: -53px;
+  margin-bottom: 55px;
+}
+
+.contact {
+  padding-bottom: 100px;
+  &__title {
+    color: $title;
+    @extend %title-font;
+    font-size: 36px;
+    line-height: 60px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 2px;
+      background-color: #6d7278;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  &__social {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__social-item {
+    margin-right: 40px;
+  }
+  &__text {
+    margin-bottom: 10px;
+  }
+  &__phone {
+    color: $default;
+  }
+  &__adress {
+    padding-left: 284px;
+  }
+  &__city {
+    margin-bottom: 16px;
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__form-input {
+    border: 1px solid #dfdfdf;
+    border-radius: 20px;
+    padding: 6px 17px;
+    margin-bottom: 13px;
+    width: 48%;
+    &::placeholder {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      color: #a1a1a1;
+    }
+  }
+  &__form-area {
+    width: 100%;
+    padding: 14px 17px;
+    border: 1px solid #dfdfdf;
+    border-radius: 24px;
+    min-height: 125px;
+    resize: none;
+    margin-bottom: 20px;
+    &::placeholder {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      color: #a1a1a1;
+    }
+  }
+  &__form-btn {
+    border-radius: 21px;
+    height: 40px;
+    padding: 6px 72px;
+    border: none;
+    background-color: $title;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: #fffff0;
+    cursor: pointer;
+    margin-bottom: 101px;
+  }
+}
+
+.contact__slider {
+  padding-bottom: 102px;
+  &-link {
+    position: relative;
+    margin-right: 18px;
+    margin-bottom: 20px;
+
+    &:hover {
+      .contact__slider-title {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+  }
+
+  &-title {
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 137%;
+    text-align: center;
+    padding: 0 5px;
+    color: $title;
+    @extend %title-font;
+    background: rgba($color: #fff, $alpha: 0.6);
+    opacity: 0;
+  }
+}

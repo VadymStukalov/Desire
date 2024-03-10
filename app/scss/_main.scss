@@ -3,6 +3,7 @@
 .breadcrumbs {
   background: rgba($color: #dfdfdf, $alpha: 0.5);
   padding: 13px 14px;
+  position: relative;
   &__list {
     display: flex;
   }
