@@ -18,6 +18,13 @@ $(function () {
     dots: true,
     arrows: false,
   });
+  $(".article-slider__box").slick({
+    prevArrow:
+      '<button type="button" class="article-slider__arrow article-slider__arrow-left"> <img src="images/arrow-slide-left.svg" alt="img" />  </button>',
+
+    nextArrow:
+      '<button type="button" class="article-slider__arrow article-slider__arrow-right"> <img src="images/arrow-slide-right.svg" alt="img" />  </button>',
+  });
 
   var mixer = mixitup(".gallery__inner", {
     load: {
