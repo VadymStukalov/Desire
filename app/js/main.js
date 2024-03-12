@@ -5,6 +5,13 @@ $(function () {
   $(".rightside-menu__close").on("click", function () {
     $(".rightside-menu").addClass("rightside-menu--close");
   });
+  $(".header__btn-menu").on("click", function () {
+    $(".menu").toggleClass("menu--open");
+  });
+
+  if ($(window).width() < 651) {
+    $(".work-path__item--measuring").appendTo($(".work-path__items-box"));
+  }
 
   $(".top__slider").slick({
     dots: true,

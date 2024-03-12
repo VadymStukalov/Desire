@@ -6,6 +6,11 @@
   position: relative;
   &__list {
     display: flex;
+    overflow-x: auto;
+  }
+  &__item {
+    position: relative;
+    padding-right: 8px;
   }
   &__link {
     color: $default;
@@ -13,8 +18,7 @@
   }
   &__item::after {
     content: "/";
-    margin-left: -4px;
-    margin-right: 4px;
+    position: absolute;
   }
   &__item:last-child::after {
     display: none;
@@ -31,6 +35,7 @@
       content: "";
       position: absolute;
       background-image: url(../images/slider-bg.jpg);
+      background-repeat: no-repeat;
       width: 100%;
       height: 722px;
       top: 0;
@@ -47,7 +52,7 @@
     max-width: 645px;
   }
   &__slider-img {
-    // margin-left: -15%;
+    margin-left: -15%;
     max-width: 703px;
     height: 815px;
     object-fit: cover;
@@ -83,7 +88,7 @@
   padding: 46px 0 35px;
   &__title {
     color: $title;
-    font-family: "Montserrat", sans-serif;
+    @extend %title-font;
     font-size: 36px;
     line-height: 51px;
     padding-bottom: 25px;
@@ -142,7 +147,7 @@
   }
 
   &__info-title {
-    font-family: "Montserrat", sans-serif;
+    @extend %title-font;
     color: $title;
     font-size: 20px;
     line-height: 25px;
@@ -178,7 +183,7 @@
   background-repeat: no-repeat;
   // min-height: 600px;
   &__title {
-    font-family: "Montserrat", sans-serif;
+    @extend %title-font;
     color: $title;
     font-size: 60px;
     line-height: 80px;
@@ -270,7 +275,8 @@
   }
   &__item-title {
     margin-left: 13px;
-    @extend %title-font;
+    // @extend %title-font;
+    font-family: "Montserrat", sans-serif;
     color: $title;
   }
   &__item-text {
@@ -332,6 +338,7 @@
 .blog-box {
   padding-bottom: 100px;
   &__title {
+    @extend %title-font;
     text-align: center;
     color: $title;
     font-size: 36px;
@@ -364,7 +371,7 @@
   }
 
   &__item-title {
-    @extend %title-font;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     line-height: 158%;
     color: $title;
