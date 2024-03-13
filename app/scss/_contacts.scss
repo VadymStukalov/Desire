@@ -1,6 +1,9 @@
 .map {
   margin-top: -53px;
   margin-bottom: 55px;
+  iframe {
+    height: 578px;
+  }
 }
 
 .contact {
@@ -122,7 +125,7 @@
     bottom: 0;
     z-index: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 16px;
     line-height: 137%;

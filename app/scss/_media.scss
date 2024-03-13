@@ -1,9 +1,20 @@
+@media (max-width: 1700px) {
+  .contact {
+    &__slider-img {
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: 1366px) {
   .collection {
     grid-template-columns: repeat(3, 1fr);
     &__images {
       width: 100%;
     }
+  }
+  .map {
+    margin-top: 0;
   }
 }
 
@@ -16,6 +27,32 @@
     &__slider-img {
       height: 643px;
     }
+  }
+  .contact__slider {
+    &-img {
+      height: 240px;
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .blog {
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &__items {
+      max-width: 100%;
+    }
+    &__item-img {
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+  .aside {
+    width: 100%;
+    margin-left: 0;
+    order: -1;
+    padding-bottom: 40px;
   }
 }
 
@@ -40,6 +77,14 @@
       padding: 6px 10px;
     }
   }
+  .about {
+    &__text {
+      padding-left: 0;
+    }
+    &__content {
+      padding: 40px 0;
+    }
+  }
 }
 
 @media (max-width: 840px) {
@@ -56,6 +101,15 @@
     &__slider-img {
       height: 540px;
     }
+    .inspiration {
+      &__inner {
+        // display: block;
+      }
+      &__images {
+        max-width: 34%;
+        height: 280px;
+      }
+    }
   }
   .collection {
     grid-template-columns: repeat(2, 1fr);
@@ -66,6 +120,11 @@
     }
     &__item {
       width: 350px;
+    }
+  }
+  .contact {
+    &__adress {
+      padding-left: 0;
     }
   }
 }
@@ -125,6 +184,35 @@
     }
     &__btn {
       margin-bottom: 10px;
+    }
+  }
+  .about {
+    &__prev {
+      padding: 80px 0;
+    }
+  }
+  .inspiration {
+    &::after {
+      min-height: 428px;
+    }
+    &__images {
+      max-width: 37%;
+      max-height: 352px;
+    }
+  }
+  .inspiration {
+    &__images {
+      display: none;
+    }
+  }
+  .partners {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .map {
+    iframe {
+      height: 300px;
     }
   }
 }
@@ -187,6 +275,14 @@
       line-height: 36px;
     }
   }
+  .contact {
+    &__form-input {
+      width: 100%;
+    }
+  }
+  .slick-dots li {
+    padding: 0 5px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -223,6 +319,12 @@
         border-radius: 4px;
       }
     }
+    .about {
+      &__prev-title {
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
   }
 
   .menu {
@@ -233,6 +335,7 @@
     text-align: center;
     transform: translateY(-350px);
     transition: all 0.5s;
+
     &--open {
       transform: translateY(30px);
     }
@@ -265,6 +368,78 @@
     &__item:first-child {
       grid-column: 1;
       grid-row: 1;
+    }
+    &.gallery-page {
+      .gallery__item:nth-child(8) {
+        grid-column: 1;
+        // grid-row: 1;
+      }
+    }
+  }
+
+  .inspiration {
+    &__item-text {
+      margin-right: 10px;
+    }
+    &__images {
+      max-width: 34%;
+      height: 280px;
+    }
+  }
+  .menu__list-link--active::after {
+    display: none;
+  }
+  .blog {
+    &__category-title,
+    &__tags-title,
+    &__blockquote-author {
+      font-size: 16px;
+      line-height: 23px;
+    }
+    &__item-title {
+      font-size: 24px;
+      line-height: 38px;
+    }
+  }
+  .recent-posts__title {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .blog-one {
+    &__reply {
+      margin-left: 0;
+    }
+    &__comments-name,
+    &__comments-date {
+      margin-left: 55px;
+    }
+    &__comments-name {
+      margin-top: -46px;
+    }
+    &__comments-avatar {
+      width: 45px;
+      height: 45px;
+    }
+    &__comments-item {
+      flex-wrap: wrap;
+    }
+    &__form-input {
+      width: 100%;
+    }
+    &__links {
+      padding: 30px 0;
+    }
+    &__link {
+      span {
+        display: none;
+      }
+    }
+    &__tags-title,
+    &__comments-name,
+    &__form-title,
+    &__comments-title {
+      font-size: 16px;
+      line-height: 23px;
     }
   }
 }
@@ -301,5 +476,16 @@
     &__form-input {
       width: 100%;
     }
+  }
+  .contact {
+    &__slider-img {
+      height: 310px;
+    }
+  }
+  .slick-dots li {
+    padding: 0 1px;
+  }
+  .blog-one__item blockquote {
+    padding: 0 20px;
   }
 }

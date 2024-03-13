@@ -106,9 +106,10 @@
   }
   &__item {
     color: $title;
-    @extend %title-font;
+    // @extend %title-font;
     line-height: 23px;
-    margin-bottom: 33px;
+    margin-bottom: 16px;
+    font-weight: 700;
   }
   &__item-content {
     display: flex;
